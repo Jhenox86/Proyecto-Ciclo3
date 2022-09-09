@@ -79,11 +79,11 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #1e1e1e;
+  background-color: rgb(159, 215, 191);
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: rgb(67, 164, 157);
 }
 
 a {
@@ -91,7 +91,7 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-	color: #F99;
+	color: rgb(67, 164, 157);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,31 +123,31 @@ Global Styles
 */
 html,
 body {
-  background: #1f2122;
+  background: #1B998B;
   font-family: 'Poppins', sans-serif;
 }
 
 body .page-content {
   margin-top: 110px;
-  background-color: #27292a;
+  background-color: #55DDFF;
   padding: 60px;
   border-radius: 23px;
 }
 
 p {
   font-size: 15px;
-  color: #666;
+  color: #ED217C;
   line-height: 30px;
   margin-bottom: 0px;
 }
 
 ::selection {
-  background: #e75e8d;
+  background: #ED217C;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #e75e8d;
+  background: #ED217C;
   color: #fff;
 }
 
@@ -159,7 +159,7 @@ p {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #e75e8d;
+  background-color: #ED217C;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -173,14 +173,14 @@ p {
 
 .main-button a:hover {
   background-color: #fff;
-  color: #e75e8d;
+  color: #ED217C;
 }
 
 .main-border-button a {
   font-size: 14px;
-  color: #ec6090;
+  color: #ED217C;
   background-color: transparent;
-  border: 1px solid #ec6090;
+  border: 1px solid #ED217C;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -195,17 +195,17 @@ p {
 .main-border-button a:hover {
   border-color: #fff;
   background-color: #fff;
-  color: #e75e8d;
+  color: #ED217C;
 }
 
 .border-no-active a {
-  border-color: #666;
-  color: #666;
+  border-color: #FFFD82;
+  color: #FFFD82;
 }
 
 .border-no-active a:hover{
-  border-color: #666;
-  color: #666;
+  border-color: #FFFD82;
+  color: #FFFD82;
   background-color: transparent;
 }
 
@@ -214,7 +214,7 @@ section {
 }
 
 .heading-section h4 {
-  color: #ec6090;
+  color: #ED217C;
   font-size: 34px;
   text-decoration: none;
   margin-bottom: 30px;
@@ -299,7 +299,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #e75e8d;
+  background: #ED217C;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -322,7 +322,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #e75e8d;
+  background: #ED217C;
   border-radius: 50%;
 }
 
@@ -341,7 +341,7 @@ Header Style
   top: 0!important;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0px 0px 10px #FFFD82!important;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -381,7 +381,7 @@ Header Style
 }
 
 .header-area .main-nav #search input {
-  background-color: #27292a;
+  background-color: #fcfcfc;
   height: 46px;
   border-radius: 23px;
   border: none;
@@ -392,7 +392,7 @@ Header Style
 
 .header-area .main-nav #search i {
   position: absolute;
-  color: #666;
+  color: #FF9B71;
   left: 20px;
   top: 16px;
   width: 18px;
@@ -400,15 +400,15 @@ Header Style
   font-size: 16px;
 }
 
-.header-area .main-nav .logo {
-  border-right: 1px solid #27292a;
+/* .header-area .main-nav .logo {
+  border-right: 1px solid #FF9B71;
   flex-basis: 25%;
   margin-right: 5%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
+} */
 
 .header-area .main-nav .logo img {
   width: 191px;
@@ -449,7 +449,7 @@ Header Style
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
-  color: #666;
+  color: #ffffff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -461,7 +461,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #27292a;
+  background-color: #FF9B71;
   padding: 8px 10px 8px 20px;
   border-radius: 23px;
 }
@@ -479,13 +479,13 @@ Header Style
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #e75e8d !important;
+  color: #ED217C !important;
 }
 
 .header-area .main-nav .nav li:last-child:hover a,
 .header-area .main-nav .nav li:last-child a.active {
   color: #fff !important;
-  background-color: #e75e8d !important;
+  background-color: #ED217C !important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -523,7 +523,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e75e8d;
+  background-color: #ED217C;
   display: block;
   position: absolute;
   width: 30px;
@@ -534,7 +534,7 @@ Header Style
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #e75e8d;
+  background-color: #ED217C;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -543,7 +543,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e75e8d;
+  background-color: #ED217C;
   display: block;
   position: absolute;
   width: 30px;
@@ -554,7 +554,7 @@ Header Style
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #e75e8d;
+  background-color: #ED217C;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -595,11 +595,11 @@ Header Style
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #e75e8d;
+  background-color: #ED217C;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #e75e8d;
+  background-color: #ED217C;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -607,11 +607,11 @@ Header Style
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #e75e8d;
+  background-color: #ED217C;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #e75e8d;
+  background-color: #ED217C;
 }
 
 .header-area.header-sticky {
@@ -662,7 +662,7 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #e75e8d!important;
+    color: #ED217C!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -724,13 +724,13 @@ Header Style
   }
   .header-area .main-nav .nav li a:hover {
     background: #fff !important;
-    color: #e75e8d!important;
+    color: #ED217C!important;
   }
   .header-area .main-nav .nav li:last-child a img {
     display: none;
   }
   .header-area .main-nav .nav li:last-child a:hover {
-    color: #ec6090 !important;
+    color: #ED217C !important;
     background-color: transparent !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
@@ -756,7 +756,7 @@ Header Style
     height: auto;
   }
   .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
+    color: #FF9B71;
     right: 30px;
     font-size: 14px;
     top: 15px;
@@ -796,7 +796,7 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #ED217C;
 }
 
 /* 
@@ -808,12 +808,12 @@ Most Popular Style
 .most-popular {
   margin-top: 60px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   border-radius: 23px;
 }
 
 .most-popular .item {
-  background-color: #27292a;
+  background-color: #FF9B71;
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
@@ -860,7 +860,7 @@ Most Popular Style
 }
 
 .most-popular .item ul li:last-child i {
-  color: #ec6090;
+  color: #ED217C;
 }
 
 .most-popular .main-button {
@@ -877,12 +877,12 @@ Gaming Library Style
 .gaming-library {
   margin-top: 60px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   border-radius: 23px;
 }
 
 .gaming-library .item {
-  border-bottom: 1px solid #27292a;
+  border-bottom: 1px solid #55DDFF;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -925,7 +925,7 @@ Gaming Library Style
 }
 
 .gaming-library .item ul li span {
-  color: #666;
+  color: #1B998B;
   font-size: 14px;
 }
 
@@ -953,7 +953,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: #ec6090;
+  color: #ED217C;
 }
 
 /* 
@@ -964,7 +964,7 @@ Featured Games Style
 
 .featured-games {
   border-radius: 23px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   padding: 30px;
 }
 
@@ -990,9 +990,9 @@ Featured Games Style
 }
 
 .featured-games .item .thumb .hover-effect h6 {
-  background-color: rgba(31,33,34,0.95);
+  background-color: #FFFD82;
   display: inline-block;
-  color: #ec6090;
+  color: #ED217C;
   font-weight: 600;
   font-size: 14px;
   padding: 10px 20px;
@@ -1011,7 +1011,7 @@ Featured Games Style
 }
 
 .featured-games .item span {
-  color: #666;
+  color: #ffffff;
   display: block;
   margin-top: 7px;
   font-weight: 400;
@@ -1024,7 +1024,7 @@ Featured Games Style
 
 .featured-games .item ul li {
   text-align: right;
-  color: #fff;
+  color: #ED217C;
   font-size: 14px;
 }
 
@@ -1033,7 +1033,7 @@ Featured Games Style
 }
 
 .featured-games .item ul li:last-child i {
-  color: #ec6090;
+  color: #ED217C;
 }
 
 .featured-games .owl-nav {
@@ -1055,7 +1055,7 @@ Featured Games Style
 .featured-games .owl-nav .owl-next span  {
   font-size: 36px;
   display: inline-block;
-  color: #666;
+  color: #1B998B;
   opacity: 1;
   transition: all .3s;
 }
@@ -1063,12 +1063,12 @@ Featured Games Style
 .featured-games .owl-nav .owl-prev span:hover,
 .featured-games .owl-nav .owl-next span:hover {
   opacity: 1;
-  color: #ec6090;
+  color: #ED217C;
 }
 
 .top-downloaded {
   border-radius: 23px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   padding: 30px;
   max-height: 567px;
   min-height: 567px;
@@ -1092,14 +1092,14 @@ Featured Games Style
 
 .top-downloaded ul li h6 {
   font-size: 15px;
-  color: #666;
+  color: #ffffff;
   font-weight: 400;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .top-downloaded ul li span {
-  color: #fff;
+  color: #ED217C;
   font-size: 15px;
   margin-right: 10px;
 }
@@ -1113,13 +1113,13 @@ Featured Games Style
   height: 46px;
   text-align: center;
   line-height: 46px;
-  color: #ec6090;
-  background-color: #27292a;
+  color: #ED217C;
+  background-color: #FF9B71;
   border-radius: 50%;
 }
 
 .top-downloaded ul li {
-  border-bottom: 1px solid #27292a;
+  border-bottom: 1px solid #1B998B;
   margin-bottom: 28px;
   padding-bottom: 28px;
 }
@@ -1130,13 +1130,13 @@ Featured Games Style
 
 .top-downloaded .text-button a {
   font-weight: 600;
-  color: #ec6090;
+  color: #ED217C;
   font-size: 15px;
 }
 
 /* 
 ---------------------------------------------
-Start Stream Style
+Start Stream Style - ACA VOY
 --------------------------------------------- 
 */
 
