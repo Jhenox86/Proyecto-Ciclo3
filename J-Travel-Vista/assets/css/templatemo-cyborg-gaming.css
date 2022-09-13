@@ -123,13 +123,13 @@ Global Styles
 */
 html,
 body {
-  background: #1B998B;
+  background: #55ddff;
   font-family: 'Poppins', sans-serif;
 }
 
 body .page-content {
   margin-top: 110px;
-  background-color: #55DDFF;
+  background-color: #1b998b;
   padding: 60px;
   border-radius: 23px;
 }
@@ -782,10 +782,11 @@ Banner Style
 }
 
 .main-banner h6 {
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 25px;
+  
 }
 
 .main-banner h4 {
@@ -882,7 +883,7 @@ Gaming Library Style
 }
 
 .gaming-library .item {
-  border-bottom: 1px solid #55DDFF;
+  border-bottom: 1px solid #1b998b;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -1136,7 +1137,7 @@ Featured Games Style
 
 /* 
 ---------------------------------------------
-Start Stream Style - ACA VOY
+Start Stream Style -
 --------------------------------------------- 
 */
 
@@ -1148,7 +1149,7 @@ Start Stream Style - ACA VOY
 
 .start-stream .item {
   padding: 30px;
-  border: 1px solid #444;
+  border: 1px solid #ED217C;
   border-radius: 23px;
 }
 
@@ -1173,7 +1174,7 @@ Live Stream Style
 .live-stream {
   margin-top: 60px;
   border-radius: 23px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   padding: 30px;
 }
 
@@ -1204,7 +1205,7 @@ Live Stream Style
 
 .live-stream .hover-effect .live a { 
   position: absolute;
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: #ED217C;
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;
@@ -1226,7 +1227,7 @@ Live Stream Style
 }
 
 .live-stream .hover-effect ul li a {
-  background-color: rgba(236, 96, 144, 0.9);
+  background-color: #ED217C;
   padding: 5px 10px;
   border-radius: 23px;
   color: #fff;
@@ -1239,7 +1240,7 @@ Live Stream Style
 
 .live-stream span i {
   color: #fff;
-  background-color: #ec6090;
+  background-color: #ED217C;
   border-radius: 50%;
   font-size: 12px;
   width: 20px;
@@ -1252,7 +1253,7 @@ Live Stream Style
 
 .live-stream span {
   font-size: 14px;
-  color: #ec6090;
+  color: #ED217C;
 }
 
 .live-stream .down-content h4 {
@@ -1292,7 +1293,7 @@ Featured Banner Style
   display: inline-block;
   text-align: center;
   line-height: 46px;
-  color: #ec6090;
+  color: #ED217C;
 }
 
 /* 
@@ -1311,11 +1312,11 @@ Game Details Style
 .game-details .content {
   border-radius: 23px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
 }
 
 .game-details .content .left-info {
-  background-color: #27292a;
+  background-color: #ED217C;
   border-radius: 23px;
   padding: 30px;
   margin-bottom: 30px;
@@ -1331,7 +1332,7 @@ Game Details Style
 }
 
 .game-details .content .left-info span {
-  color: #666;
+  color: #FFFD82;
   display: block;
   margin-top: 7px;
   font-weight: 400;
@@ -1352,11 +1353,11 @@ Game Details Style
 }
 
 .game-details .content .left-info ul li:last-child i {
-  color: #ec6090;
+  color: yellow;
 }
 
 .game-details .content .right-info {
-  background-color: #27292a;
+  background-color: #ED217C;
   border-radius: 23px;
   padding: 30px;
   margin-bottom: 30px;
@@ -1380,7 +1381,7 @@ Game Details Style
 } 
 
 .game-details .content .right-info ul li i {
-  color: #ec6090;
+  color: yellow;
 }
 
 .game-details .main-border-button {
@@ -1401,13 +1402,13 @@ Other Related Style
 .other-games {
   border-radius: 23px;
   padding: 30px 30px 0px 30px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   margin-top: 60px;
 }
 
 .other-games .item {
   position: relative;
-  border-bottom: 1px solid #27292a;
+  border-bottom: 1px solid #1B998B;
   padding-bottom: 52px;
   margin-bottom: 30px;
 }
@@ -1425,7 +1426,7 @@ Other Related Style
 }
 
 .other-games .item span {
-  color: #666;
+  color: #1B998B;
   font-size: 14px;
   display: block;
 }
@@ -1447,7 +1448,7 @@ Other Related Style
 }
 
 .other-games ul li:last-child i {
-  color: #ec6090;
+  color: #ED217C;
 }
 
 /* 
@@ -1458,7 +1459,7 @@ Top Streamers Style
 
 .top-streamers {
   border-radius: 23px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
   padding: 30px;
   max-height: 567px;
   min-height: 567px;
@@ -1467,7 +1468,7 @@ Top Streamers Style
 .top-streamers ul li {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid #353637;
+  border-bottom: 1px solid #1B998B;
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
@@ -1490,13 +1491,13 @@ Top Streamers Style
 .top-streamers ul li h6 {
   display: inline;
   font-size: 14px;
-  color: #ec6090;
+  color: #ED217C;
   font-weight: 400;
 }
 
 .top-streamers ul li h6 i {
   color: #fff;
-  background-color: #ec6090;
+  background-color: #ED217C;
   border-radius: 50%;
   font-size: 12px;
   width: 20px;
@@ -1524,13 +1525,13 @@ Profile Style
 .main-profile {
   border-radius: 23px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #FF9B71;
 }
 
 .main-profile .main-info span {
   font-size: 14px;
   color: #fff;
-  background-color: #e75e8d;
+  background-color: #ED217C;
   padding: 8px 20px;
   display: inline-block;
   border-radius: 25px;
@@ -1551,22 +1552,22 @@ Profile Style
 .main-profile ul {
   border-radius: 23px;
   padding: 30px;
-  background-color: #27292a;
+  background-color: #ED217C;
 }
 
 .main-profile ul li {
   width: 100%;
   font-size: 14px;
-  color: #666;
+  color: #FFF;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #1B998B;
 }
 
 .main-profile ul li span {
   float: right;
   font-weight: 500;
-  color: #ec6090;
+  color: #FFF;
 }
 
 .main-profile ul li:last-child {
@@ -1577,7 +1578,7 @@ Profile Style
 
 .clips {
   margin-top: 30px;
-  border-top: 2px solid #27292a;
+  border-top: 2px solid #1B998B;
 }
 
 .clips .heading-section {
@@ -1587,7 +1588,7 @@ Profile Style
 .clips .item  {
   border-radius: 23px;
   padding: 30px 15px;
-  background-color: #27292a;
+  background-color: #ED217C;
   margin-bottom: 30px;
 }
 
@@ -1608,7 +1609,7 @@ Profile Style
     display: inline-block;
     text-align: center;
     line-height: 46px;
-    color: #ec6090;
+    color: #55ddff;
 }
 
 .clips .item h4 {
@@ -1617,7 +1618,7 @@ Profile Style
 }
 
 .clips .item span i {
-  color: #ec6090;
+  color: yellow;
 }
 
 .clips .item span {
