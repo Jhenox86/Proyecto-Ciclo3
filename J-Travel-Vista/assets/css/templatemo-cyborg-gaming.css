@@ -839,7 +839,7 @@ Most Popular Style
 }
 
 .most-popular .item span {
-  color: #666;
+  color: #ed;
   display: block;
   margin-top: 7px;
   font-weight: 400;
@@ -852,7 +852,7 @@ Most Popular Style
 
 .most-popular .item ul li {
   text-align: right;
-  color: #fff;
+  color: #ED217C;
   font-size: 14px;
 }
 
@@ -944,7 +944,7 @@ Footer Style
 footer p {
   text-align: center;
   padding: 30px 0px;
-  color: #fff;
+  color: #1B998B;
   font-weight: 300;
 }
 
