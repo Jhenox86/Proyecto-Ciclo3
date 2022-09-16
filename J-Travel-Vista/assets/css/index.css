@@ -1,0 +1,12 @@
+.bg-login-imagen{
+    background: url("../images/banner-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 0px;
+    height: 400px;
+}
+
+.sizeDiv{
+    width: 40vw;
+
+}
