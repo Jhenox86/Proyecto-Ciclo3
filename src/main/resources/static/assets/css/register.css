@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-register{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.form-register h4{
+
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-box{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-button{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    
+}
+
+
