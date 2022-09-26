@@ -41,11 +41,10 @@ public class JTravelAplicationController {
         return "login";
     }
 
-   
-    
+    @GetMapping("/register.html")
+    public String goToRegister(){
+        return "register";
+    }
 
-   
-
-
-    
+     
 }
