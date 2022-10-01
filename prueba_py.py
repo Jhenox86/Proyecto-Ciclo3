@@ -10,10 +10,15 @@ from flask import send_from_directory
 
 
 app= Flask (__name__)
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'testdb'
+# app.config['MYSQL_HOST'] = 'localhost'
+# app.config['MYSQL_USER'] = 'root'
+# app.config['MYSQL_PASSWORD'] = ''
+# app.config['MYSQL_DB'] = 'testdb'
+
+app.config['MYSQL_HOST'] = '31.170.166.175'
+app.config['MYSQL_USER'] = 'u565420198_testingPlaceU'
+app.config['MYSQL_PASSWORD'] = 'Proyecto_minTIC_318'
+app.config['MYSQL_DB'] = 'u565420198_testingPlace'
 
 mysql = MySQL(app)
 
