@@ -11,14 +11,14 @@
     <title>J-TRAVEL</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -52,7 +52,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                        <img src="static/assets/images/logo.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
@@ -65,12 +65,15 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="browse.html" class="active">Sitios turísticos</a></li>
-                        <li><a href="details.html">Hoteles</a></li>
-                        <li><a href="streams.html">Nosotros</a></li>
-                        <li><a href="login.html">Perfil <img src="assets/images/profile-header.png" alt=""></a></li>
-                    </ul>   
+                      <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
+                      <li><a href="{{url_for('browse')}}"class="active">Sitios turísticos</a></li>
+                      <li><a href="{{url_for('details')}}">Hoteles</a></li>
+                      <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                      <li><a href="{{url_for('resena')}}">Reseña</a></li>
+                      <li><a href="{{url_for('entrar')}}">Login</a></li>
+                      <li><a href="{{url_for('register')}}">Registrarse</a></li>
+                      <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                  </ul> 
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -97,7 +100,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="owl-features owl-carousel">
                   <div class="item">
                     <div class="thumb">
-                      <img src="assets/images/featured-01.jpg" alt="">
+                      <img src="static/assets/images/featured-01.jpg" alt="">
                       <div class="hover-effect">
                         <h6>200 opiniones</h6>
                       </div>
@@ -109,7 +112,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="item">
                     <div class="thumb">
-                      <img src="assets/images/featured-02.jpg" alt="">
+                      <img src="static/assets/images/featured-02.jpg" alt="">
                       <div class="hover-effect">
                         <h6>160 opiniones</h6>
                       </div>
@@ -121,7 +124,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="item">
                     <div class="thumb">
-                      <img src="assets/images/featured-03.jpg" alt="">
+                      <img src="static/assets/images/featured-03.jpg" alt="">
                       <div class="hover-effect">
                         <h6>350 opiniones</h6>
                       </div>
@@ -133,7 +136,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="item">
                     <div class="thumb">
-                      <img src="assets/images/featured-04.jpg" alt="">
+                      <img src="static/assets/images/featured-04.jpg" alt="">
                       <div class="hover-effect">
                         <h6>270 opiniones</h6>
                       </div>
@@ -145,7 +148,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="item">
                     <div class="thumb">
-                      <img src="assets/images/featured-05.jpg" alt="">
+                      <img src="static/assets/images/featured-05.jpg" alt="">
                       <div class="hover-effect">
                         <h6>345 opiniones</h6>
                       </div>
@@ -157,7 +160,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="item">
                     <div class="thumb">
-                      <img src="assets/images/featured-06.jpg" alt="">
+                      <img src="static/assets/images/featured-06.jpg" alt="">
                       <div class="hover-effect">
                         <h6>150 opiniones</h6>
                       </div>
@@ -177,19 +180,19 @@ https://templatemo.com/tm-579-cyborg-gaming
                 </div>
                 <ul>
                   <li>
-                    <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                    <img src="static/assets/images/game-01.jpg" alt="" class="templatemo-item">
                     <h4>Villa de Leyva</h4>
                     <h6>Conocido por sus edificios coloniales encalados, las calles con adoquines y la gran Plaza Mayor.</h6>
                     <span><i class="fa fa-star" style="color: yellow;"></i> 4.9</span>
                   </li>
                   <li>
-                    <img src="assets/images/game-02.jpg" alt="" class="templatemo-item">
+                    <img src="static/assets/images/game-02.jpg" alt="" class="templatemo-item">
                     <h4>Jardín</h4>
                     <h6>Conocido por sus casas de colores brillantes, las exhibiciones florales coloridas y los dulces de leche.</h6>
                     <span><i class="fa fa-star" style="color: yellow;"></i> 4.9</span>
                    </li>
                   <li>
-                    <img src="assets/images/game-03.jpg" alt="" class="templatemo-item">
+                    <img src="static/assets/images/game-03.jpg" alt="" class="templatemo-item">
                     <h4>Salento</h4>
                     <h6>Conocido por sus fincas cafeteras y la vegetación de su entorno. Al este se encuentra el Valle del Cocora.</h6>
                     <span><i class="fa fa-star" style="color: yellow;"></i> 4.9</span>
@@ -210,7 +213,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="col-lg-4">
                   <div class="item">
                     <div class="icon">
-                      <img src="assets/images/service-01.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
+                      <img src="static/assets/images/service-01.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
                     </div>
                     <h4><a href="https://www.instagram.com/p/Bhur3U2H2bS/?utm_source=ig_embed&utm_campaign=embed_video_watch_again">Will Smith</a></h4>
                     <p style="color:#fffd82 ;">"Thank You to all mi gente in Cartegena.  Only been here a few days.  I’m shooting my new movie @GeminiManMovie.  I’m Lovin’ It Already!! Shoutout @carlosvives on the track. @nickyjampr where u at?!"</p>
@@ -220,7 +223,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="col-lg-4">
                   <div class="item">
                     <div class="icon">
-                      <img src="assets/images/service-02.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
+                      <img src="static/assets/images/service-02.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
                     </div>
                     <h4><a href="https://www.instagram.com/p/BelNKRbACFx/?utm_source=ig_embed&ig_rid=e5c9f33c-c731-4d70-a0cd-1fd9c23e591e">Charlize Theron</a></h4>
                     <p style="color: #fffd82;">"That’s a wrap on Flarsky! Honestly one of the best experiences of my life. Thank you to the incredible cast and crew for all your hard work and for making me laugh every step of the way! #FLARSKY #JonathanLevine"</p>
@@ -229,7 +232,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="col-lg-4">
                   <div class="item">
                     <div class="icon">
-                      <img src="assets/images/service-03.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
+                      <img src="static/assets/images/service-03.jpg" alt="" style="max-width: 60px; border-radius: 50%;">
                     </div>
                     <h4><a href="https://www.youtube.com/watch?v=nRzM5AFjiOY">Anthony Bourdain</a></h4>
                     <p style="color: #fffd82;">"Colombia is unique in South America. It has so many advantages that other countries do not … the incredible mix of its indigenous, European and African roots in its food, the diversity of its different regions and the variety of its ingredients"</p>
@@ -258,7 +261,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-01.jpg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-01.jpg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=DUT5rEU6pqM" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -270,7 +273,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-02.jpeg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-02.jpeg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=h0GU94wP9Y8" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -282,7 +285,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-03.jpeg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-03.jpeg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=wnJ6LuUFpMo" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -294,7 +297,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-04.jpg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-04.jpg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=U3SiqxlwGVs" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -306,7 +309,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-05.jpg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-05.jpg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=GMXdEVG4eCo" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -318,7 +321,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-06.jpg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-06.jpg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=QwXZsX61vX4" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -330,7 +333,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-07.jpg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-07.jpg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=Mtau4v6foHA" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -342,7 +345,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
                       <div class="thumb">
-                        <img src="assets/images/clip-08.jpg" alt="" style="border-radius: 23px;">
+                        <img src="static/assets/images/clip-08.jpg" alt="" style="border-radius: 23px;">
                         <a href="https://www.youtube.com/watch?v=y-ClQeUa3iE" target="_blank"><i class="fa fa-play"></i></a>
                       </div>
                       <div class="down-content">
@@ -383,14 +386,14 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="static/assets/js/isotope.min.js"></script>
+  <script src="static/assets/js/owl-carousel.js"></script>
+  <script src="static/assets/js/tabs.js"></script>
+  <script src="static/assets/js/popup.js"></script>
+  <script src="static/assets/js/custom.js"></script>
 
 
   </body>

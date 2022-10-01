@@ -11,14 +11,14 @@
     <title>J-TRAVEL</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -52,7 +52,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                        <img src="static/assets/images/logo.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
@@ -65,12 +65,15 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="browse.html">Sitios turísticos</a></li>
-                        <li><a href="details.html" class="active">Hoteles</a></li>
-                        <li><a href="streams.html">Nosotros</a></li>
-                        <li><a href="login.html">Perfil<img src="assets/images/profile-header.png" alt=""></a></li>
-                    </ul>   
+                      <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
+                      <li><a href="{{url_for('browse')}}">Sitios turísticos</a></li>
+                      <li><a href="{{url_for('details')}}"class="active">Hoteles</a></li>
+                      <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                      <li><a href="{{url_for('resena')}}">Reseña</a></li>
+                      <li><a href="{{url_for('entrar')}}">Login</a></li>
+                      <li><a href="{{url_for('register')}}">Registrarse</a></li>
+                      <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                  </ul>  
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -126,7 +129,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                         </div>
                         <ul>
                           <a href="https://www.tripadvisor.com.mx/Hotels-g294073-Colombia-Hotels.html" class="search-icon">
-                            <img src="assets/images/logo-tripadvisor.png" alt="">
+                            <img src="static/assets/images/logo-tripadvisor.png" alt="">
                           </a>
                         </ul>
                       </div>
@@ -135,7 +138,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <div class="right-info">
                         <ul>
                           <a href="https://es.airbnb.com/colombia/stays" class="search-icon">
-                            <img src="assets/images/logo-airbnb.png" alt="">
+                            <img src="static/assets/images/logo-airbnb.png" alt="">
                           </a>
                         </ul>
                       </div>
@@ -144,7 +147,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <div class="right-info">
                         <ul>
                           <a href="https://www.hotelescolombia.co/" class="search-icon">
-                            <img src="assets/images/logo-hotelescolombia.png" alt="">
+                            <img src="static/assets/images/logo-hotelescolombia.png" alt="">
                           </a>                          
                         </ul>
                       </div>
@@ -153,7 +156,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <div class="right-info">
                         <ul>
                           <a href="https://www.kayak.com.pe/Hoteles-en-Colombia.53.dc.html" class="search-icon">
-                            <img src="assets/images/logo-kayak.png" alt="">
+                            <img src="static/assets/images/logo-kayak.png" alt="">
                           </a>                         
                         </ul>
                       </div>
@@ -162,7 +165,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <div class="right-info">
                         <ul>
                           <a href="https://www.expedia.com/es/Destinos-En-Colombia.d38.Destinos-con-hotel" class="search-icon">
-                            <img src="assets/images/logo-expedia.png" alt="">
+                            <img src="static/assets/images/logo-expedia.png" alt="">
                           </a>                         
                         </ul>
                       </div>
@@ -185,7 +188,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-01.jpg" alt="">
+                    <img src="static/assets/images/stream-01.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -200,7 +203,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-01.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-01.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Bogotá</span>
                     <h4>Leo</h4>
@@ -210,7 +213,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-02.jpg" alt="">
+                    <img src="static/assets/images/stream-02.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -225,7 +228,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-02.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-02.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Bogotá</span>
                     <h4>Harry Sasson</h4>
@@ -235,7 +238,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-03.jpg" alt="">
+                    <img src="static/assets/images/stream-03.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -250,7 +253,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-03.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-03.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Bogotá</span>
                     <h4>El Chato</h4>
@@ -260,7 +263,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-04.jpg" alt="">
+                    <img src="static/assets/images/stream-04.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -275,7 +278,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-04.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-04.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Bogotá</span>
                     <h4>Criterión</h4>
@@ -285,7 +288,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-05.jpg" alt="">
+                    <img src="static/assets/images/stream-05.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -300,7 +303,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-05.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-05.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Chía</span>
                     <h4>Andrés Carne de Res</h4>
@@ -310,7 +313,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-06.jpg" alt="">
+                    <img src="static/assets/images/stream-06.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -325,7 +328,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-06.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-06.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Bogotá</span>
                     <h4>El Cielo</h4>
@@ -335,7 +338,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-07.jpg" alt="">
+                    <img src="static/assets/images/stream-07.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -350,7 +353,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-07.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-07.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Medellín</span>
                     <h4>Carmen</h4>
@@ -360,7 +363,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               <div class="col-lg-3 col-sm-6">
                 <div class="item">
                   <div class="thumb">
-                    <img src="assets/images/stream-08.jpg" alt="">
+                    <img src="static/assets/images/stream-08.jpg" alt="">
                     <div class="hover-effect">
                       <div class="content">
                         <div class="live">
@@ -375,7 +378,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="down-content">
                     <div class="avatar">
-                      <img src="assets/images/avatar-08.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                      <img src="static/assets/images/avatar-08.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
                     </div>
                     <span><i class="fa fa-check"></i> Bogotá</span>
                     <h4>Salvo Patria</h4>
@@ -402,7 +405,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="col-lg-6">
                 <div class="item">
-                  <img src="assets/images/caribe.jpg" alt="" class="templatemo-item">
+                  <img src="static/assets/images/caribe.jpg" alt="" class="templatemo-item">
                   <h4>Región Caribe</h4><span>Mote de queso</span>
                   <ul>
                     <li>-Arroz con coco</li>
@@ -413,7 +416,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="col-lg-6">
                 <div class="item">
-                  <img src="assets/images/chuleta.jpg" alt="" class="templatemo-item">
+                  <img src="static/assets/images/chuleta.jpg" alt="" class="templatemo-item">
                   <h4>Región Pacífico</h4><span>Chuleta valluna</span>
                   <ul>
                     <li>-Chuleta Valluna</li>
@@ -424,7 +427,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="col-lg-6">
                 <div class="item">
-                  <img src="assets/images/chiguiro.jpg" alt="" class="templatemo-item">
+                  <img src="static/assets/images/chiguiro.jpg" alt="" class="templatemo-item">
                   <h4>Región Orinoquía</h4><span>Chigüiro</span>
                   <ul>
                     <li>-Chigüiro</li>
@@ -435,7 +438,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="col-lg-6">
                 <div class="item">
-                  <img src="assets/images/mojojoy.jpg" alt="" class="templatemo-item">
+                  <img src="static/assets/images/mojojoy.jpg" alt="" class="templatemo-item">
                   <h4>Región Amazonía</h4><span>Mojojoy</span>
                   <ul>
                     <li>-Mojojoy</li>
@@ -446,7 +449,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="col-lg-6">
                 <div class="item">
-                  <img src="assets/images/bandeja.jpg" alt="" class="templatemo-item">
+                  <img src="static/assets/images/bandeja.jpg" alt="" class="templatemo-item">
                   <h4>Región Andina</h4><span>Bandeja paisa</span>
                   <ul>
                     <li>-Ajiaco</li>
@@ -457,7 +460,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="col-lg-6">
                 <div class="item">
-                  <img src="assets/images/sopa.jpg" alt="" class="templatemo-item">
+                  <img src="static/assets/images/sopa.jpg" alt="" class="templatemo-item">
                   <h4>Región Insular</h4><span>Sopa de cangrejo</span>
                   <ul>
                     <li>-Rondón o Run down</li>
@@ -490,14 +493,14 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="static/assets/js/isotope.min.js"></script>
+  <script src="static/assets/js/owl-carousel.js"></script>
+  <script src="static/assets/js/tabs.js"></script>
+  <script src="static/assets/js/popup.js"></script>
+  <script src="static/assets/js/custom.js"></script>
 
 
   </body>
