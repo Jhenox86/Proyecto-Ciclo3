@@ -8,17 +8,17 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>J-TRAVEL</title>
+    <title>Cyborg - Awesome HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -51,8 +51,8 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                    <a href="{{url_for('homepage')}}" class="logo">
+                        <img src="static/assets/images/logo.png" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
@@ -65,11 +65,14 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Inicio</a></li>
-                        <li><a href="browse.html">Sitios turísticos</a></li>
-                        <li><a href="details.html">Hoteles</a></li>
-                        <li><a href="streams.html">Nosotros</a></li>
-                        <li><a href="login.html">Perfil <img src="assets/images/profile-header.png" alt=""></a></li>
+                        <li><a href="{{url_for('homepage')}}" class="active">Inicio</a></li>
+                        <li><a href="{{url_for('browse')}}">Sitios turísticos</a></li>
+                        <li><a href="{{url_for('details')}}">Hoteles</a></li>
+                        <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                        <li><a href="{{url_for('resena')}}">Reseña</a></li>
+                        <li><a href="{{url_for('entrar')}}">Login</a></li>
+                        <li><a href="{{url_for('register')}}">Registrarse</a></li>
+                        <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -103,7 +106,7 @@ https://templatemo.com/tm-579-cyborg-gaming
           </div>
           <!-- ***** Banner End ***** -->
 
-          <!-- ***** Museos populares Start***** -->
+          <!-- ***** Most Popular Start ***** -->
           <div class="most-popular">
             <div class="row">
               <div class="col-lg-12">
@@ -113,26 +116,42 @@ https://templatemo.com/tm-579-cyborg-gaming
                 <div class="row">
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-01.jpg" alt="">
-                      <h4><a href="https://www.banrepcultural.org/bogota/museo-del-oro">Museo del Oro</a><br><span>Bogotá</span></h4>
+                      <img src="static/assets/images/popular-01.jpg" alt="">
+                      <h4><a href="https://colombia.travel/es/bogota/el-museo-del-oro-de-bogota">Museo del Oro</a><br><span>Bogotá</span></h4>
+                      <ul>                       
+                        <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                        <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                      </ul>
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-02.jpg" alt="">
-                      <h4><a href="https://www.banrepcultural.org/bogota/museo-botero">Museo Botero</a><br><span>Bogotá</span></h4>
+                      <img src="static/assets/images/popular-02.jpg" alt="">
+                      <h4><a href="https://colombia.travel/en/bogota/botero-museum">Museo Botero</a><br><span>Bogotá</span></h4>
+                      <ul>
+                        <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                        <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                      </ul>
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-03.jpg" alt="">
-                      <h4><a href="https://www.pabloescobargaviria.com/museo-pablo-escobar-2/">Museo Pablo Escobar</a><br><span>Medellín</span></h4>
+                      <img src="static/assets/images/popular-03.jpg" alt="">
+                      <h4>Museo Pablo Escobar<br><span>Medellín</span></h4>
+                      <ul>
+                        <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                        <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                      </ul>
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-04.jpg" alt="">
-                      <h4><a href="https://www.banrepcultural.org/armenia/museo-del-oro-quimbaya">Museo del Oro</a><br><span>Quimbaya</span></h4>
+                      <img src="static/assets/images/popular-04.jpg" alt="">
+                      <h4>Museo del Oro<br><span>Quimbaya</span></h4>
+                      <ul>
+                        <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                        <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                      </ul>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -140,14 +159,22 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <div class="row">
                         <div class="col-lg-6 col-sm-6">
                           <div class="item inner-item">
-                            <img src="assets/images/popular-05.jpg" alt="">
-                            <h4><a href="https://www.museoaereofenix.org/">Museo Aereo Fenix</a><br><span>Palmira</span></h4>
+                            <img src="static/assets/images/popular-05.jpg" alt="">
+                            <h4>Museo Aereo Fenix<br><span>Palmira</span></h4>
+                            <ul>
+                              <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                              <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                            </ul>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                           <div class="item">
-                            <img src="assets/images/popular-06.jpg" alt="">
-                            <h4><a href="https://www.museobolivariano.org.co/">Quinta de San Pedro</a><br><span>Santa Marta</span></h4>
+                            <img src="static/assets/images/popular-06.jpg" alt="">
+                            <h4>Quinta de San Pedro<br><span>Santa Marta</span></h4>
+                            <ul>
+                              <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                              <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -155,14 +182,22 @@ https://templatemo.com/tm-579-cyborg-gaming
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-07.jpg" alt="">
-                      <h4><a href="https://cipaleo.com/">CIP</a><br><span>Villa de Leyva</span></h4>
+                      <img src="static/assets/images/popular-07.jpg" alt="">
+                      <h4>CIP<br><span>Villa de Leyva</span></h4>
+                      <ul>
+                        <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                        <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                      </ul>
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/popular-08.jpg" alt="">
-                      <h4><a href="https://www.ellibrototal.com/ltotal/">La Casa del Libro Total</a><br><span>Bucaramanga</span></h4>
+                      <img src="static/assets/images/popular-08.jpg" alt="">
+                      <h4>La Casa del Libro Total<br><span>Bucaramanga</span></h4>
+                      <ul>
+                        <!-- <li><i class="fa fa-star"></i> 4.8</li> -->
+                        <!-- <li><i class="fa fa-download"></i> 2.3M</li> -->
+                      </ul>
                     </div>
                   </div>
                   <div class="col-lg-12">
@@ -174,9 +209,9 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
             </div>
           </div>
-          <!-- ***** Museos populares End ***** -->
+          <!-- ***** Most Popular End ***** -->
 
-          <!-- ***** Guias turísticos Start ***** -->
+          <!-- ***** Gaming Library Start ***** -->
           <div class="gaming-library">
             <div class="col-lg-12">
               <div class="heading-section">
@@ -184,7 +219,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="item">
                 <ul>
-                  <li><img src="assets/images/ana.jpg" alt="" class="templatemo-item"></li>
+                  <li><img src="static/assets/images/ana.jpg" alt="" class="templatemo-item"></li>
                   <li><h4>Ana</h4><span>The Foodie Traveler</span></li>
                   <li><h4>Lenguajes</h4><span>Español, Français, English</span></li>
                   <li><h4>Lugar</h4><span>Medellín</span></li>
@@ -194,7 +229,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="item">
                 <ul>
-                  <li><img src="assets/images/jhoan.jpg" alt="" class="templatemo-item"></li>
+                  <li><img src="static/assets/images/jhoan.jpg" alt="" class="templatemo-item"></li>
                   <li><h4>Jhoan</h4><span>The Lord of The Secrets</span></li>
                   <li><h4>Lenguajes</h4><span>Español, English</span></li>
                   <li><h4>Lugar</h4><span>Medellín</span></li>
@@ -204,7 +239,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
               <div class="item last-item">
                 <ul>
-                  <li><img src="assets/images/jeisson.JPG" alt="" class="templatemo-item"></li>
+                  <li><img src="static/assets/images/jeisson.JPG" alt="" class="templatemo-item"></li>
                   <li><h4>Jeisson</h4><span>The Good Guru</span></li>
                   <li><h4>Lenguajes</h4><span>English, Français, Español, Português</span></li>
                   <li><h4>Lugar</h4><span>Medellín</span></li>
@@ -219,7 +254,7 @@ https://templatemo.com/tm-579-cyborg-gaming
               </div>
             </div>
           </div>
-          <!-- ***** Guias turisticos End ***** -->
+          <!-- ***** Gaming Library End ***** -->
         </div>
       </div>
     </div>
@@ -229,7 +264,7 @@ https://templatemo.com/tm-579-cyborg-gaming
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">J-TRAVEL</a> Company. All rights reserved. 
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
           
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
         </div>
@@ -240,14 +275,14 @@ https://templatemo.com/tm-579-cyborg-gaming
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="static/assets/js/isotope.min.js"></script>
+  <script src="static/assets/js/owl-carousel.js"></script>
+  <script src="static/assets/js/tabs.js"></script>
+  <script src="static/assets/js/popup.js"></script>
+  <script src="static/assets/js/custom.js"></script>
 
 
   </body>

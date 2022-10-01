@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css" />
+    <link rel="stylesheet" href="static/assets/css/owl.css" />
+    <link rel="stylesheet" href="static/assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!--
+TemplateMo 579 Cyborg Gaming
+https://templatemo.com/tm-579-cyborg-gaming
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="{{url_for('homepage')}}" class="logo">
+                      <img src="static/assets/images/logo.png" alt="">
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Search End ***** -->
+                  <div class="search-input">
+                    <form id="search" action="#">
+                      <input type="text" placeholder="Buscar" id='searchText' name="searchKeyword" onkeypress="handle" />
+                      <i class="fa fa-search"></i>
+                    </form>
+                  </div>
+                  <!-- ***** Search End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                      <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
+                      <li><a href="{{url_for('browse')}}">Sitios turísticos</a></li>
+                      <li><a href="{{url_for('details')}}">Hoteles</a></li>
+                      <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                      <li><a href="{{url_for('resena')}}"class="active">Reseña</a></li>
+                      <li><a href="{{url_for('entrar')}}">Login</a></li>
+                      <li><a href="{{url_for('register')}}"> Registrarse </a></li>
+                      <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                  </ul>   
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+    <!-- R2 Ciclo 3 - Desarrollo de Software - Grupo 44 - 120922 min 1:39:05 -->
+    <link rel="stylesheet" href="static/assets/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid p-5 bg-primary text-white text-center">
+        <br>
+        <br>
+        <h1>Registro</h1>
+        
+      </div>
+    </header>
+    <div class="container py-3">
+      <div class="card my-5">
+        <div class="card-body">
+          <div class="row m-3">
+            <div class="col-md-6 bg-login-imagen"></div>
+            <div class="col-md-6">
+              <h1 style="color: black" class="h4 text-gray-900 my-3 text-center"
+              >
+              <form method="post" action="/store" enctype="multipart/form-data">
+    
+                Nombre:
+                <input type="text" name="txtNombre" id="txtNombre" placeholder="ingrese su nombre completo" class="compo1">
+                <br>
+                correo:
+                <input type="email" name="txtCorreo" id="txtCorreo"placeholder="ingrese su correo" class="compo1">
+                <br>
+                Foto:
+                <input type="file" name="txtFoto" id="txtFoto"placeholder="ingrese su evidencia" class="compo1">
+                <br>
+                <br>
+                <input type="submit" name="enviar" id="enviar" value="Enviar Mensaje" class="boton" onclick="" />
+                
+            </form>
+
+                
+            </form>
+            </div>
+            <a href="{{url_for('home')}}" style="color: black"
+              >Ya tienes cuenta!</a>
+        </div>
+    </div>
+
+  </body>
+</html>

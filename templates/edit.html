@@ -1,0 +1,27 @@
+
+
+
+
+{% for empleado in empleados %}
+ 
+        <form method="post" action="/update" enctype="multipart/form-data">
+    
+        <input type="text" value="{{ empleado[0] }}" name="txtID" id="txtID">
+        <br>
+        Nombre:
+        <input type="text" name="txtNombre" value="{{ empleado[1] }}"id="txtNombre" placeholder="ingrese su nombre completo" class="compo1">
+        <br>
+        correo:
+        <input type="email" name="txtCorreo"value="{{ empleado[2] }}" id="txtCorreo"placeholder="ingrese su correo" class="compo1">
+        <br>
+        Foto:
+        <br/>
+        <img class="img-thumbnail" width='500'src="{{ url_for('uploads',nombreFoto=empleado[3] ) }}" >
+        <br/>
+        <input type="file" name="txtFoto" id="txtFoto"placeholder="ingrese su evidencia" class="compo1">
+        <br>
+        <br>
+        <input type="submit" name="enviar" id="enviar" value="Agregar" class="boton" onclick="" />
+        </form>
+
+{% endfor %}
