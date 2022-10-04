@@ -65,10 +65,11 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="{{url_for('homepage')}}" class="active">Inicio</a></li>
+                        <li><a href="{{url_for('homepage')}}">Inicio</a></li>
                         <li><a href="{{url_for('browse')}}">Sitios turísticos</a></li>
                         <li><a href="{{url_for('details')}}">Hoteles</a></li>
-                        <li><a href="{{url_for('streams')}}">Nosotros</a></li>
+                        <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                        <li><a href="{{url_for('resena1')}}" class="active">Reseña 1</a></li>
                         <li><a href="{{url_for('resena')}}">Reseña</a></li>
                         <li><a href="{{url_for('entrar')}}">Login</a></li>
                         <li><a href="{{url_for('register')}}">Registrarse</a></li>
@@ -85,73 +86,8 @@ https://templatemo.com/tm-579-cyborg-gaming
   </header>
   <!-- ***** Header Area End ***** -->
 
-
-<div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
-
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                    
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                        <a class="navbar-brand">Gestion de reseñas</a>
-                        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div id="my-nav" class="collapse navbar-collapse">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="{{url_for('create')}}">Nueva Reseña<span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="{{url_for('home')}}">Mostrar Reseña<span class="sr-only">(current)</span></a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </nav>
-                    <form method="post" action="/store" enctype="multipart/form-data">
-    
-                        Nombre:
-                        <input type="text" name="txtNombre" id="txtNombre" placeholder="ingrese su nombre completo" class="compo1">
-                        <br>
-                        correo:
-                        <input type="email" name="txtCorreo" id="txtCorreo"placeholder="ingrese su correo" class="compo1">
-                        <br>
-                        Foto:
-                        <input type="file" name="txtFoto" id="txtFoto"placeholder="ingrese su evidencia" class="compo1">
-                        <br>
-                        <br>
-                        <input type="submit" name="enviar" id="enviar" value="Enviar Mensaje" class="boton" onclick="" />
-                        
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
-
-         
-
-         
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="static/vendor/jquery/jquery.min.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <script src="static/assets/js/isotope.min.js"></script>
-  <script src="static/assets/js/owl-carousel.js"></script>
-  <script src="static/assets/js/tabs.js"></script>
-  <script src="static/assets/js/popup.js"></script>
-  <script src="static/assets/js/custom.js"></script>
-
-
-  </body>
-
-</html>
 
