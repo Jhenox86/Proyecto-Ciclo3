@@ -1,146 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>J-TRAVEL</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    />
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="static/assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css" />
-    <link rel="stylesheet" href="static/assets/css/owl.css" />
-    <link rel="stylesheet" href="static/assets/css/animate.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <!--
-
-TemplateMo 579 Cyborg Gaming
-
-https://templatemo.com/tm-579-cyborg-gaming
-
--->
-    
-    <link rel="stylesheet" href="static/assets/css/index.css" />
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   </head>
-  <body>
-    <header>
-      <div class="container-fluid p-5 bg-primary text-white text-center">
-        <div class="header-area header-sticky">
-          <div class="container">
-              <div class="row">
-                  <div class="col-12">
-                      <nav class="main-nav">
-                          <!-- ***** Logo Start ***** -->
-                          <a href="index.html" class="logo">
-                              <img src="static/assets/images/logo.png" alt="">
-                          </a>
-                          <!-- ***** Logo End ***** -->
-                          <!-- ***** Search End ***** -->
-                          <div class="search-input">
-                            <form id="search" action="#">
-                              <input type="text" placeholder="Buscar" id='searchText' name="searchKeyword" onkeypress="handle" />
-                              <i class="fa fa-search"></i>
-                            </form>
-                          </div>
-                          <!-- ***** Search End ***** -->
-                          <!-- ***** Menu Start ***** -->
-                          <ul class="nav">
-                            <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
-                            <li><a href="{{url_for('browse')}}"class="active">Sitios turísticos</a></li>
-                            <li><a href="{{url_for('details')}}">Hoteles</a></li>
-                            <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
-                            <li><a href="{{url_for('resena')}}">Reseña</a></li>
-                            <li><a href="{{url_for('entrar')}}">Login</a></li>
-                            <li><a href="{{url_for('register')}}">Registrarse</a></li>
-                            <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
-                        </ul> 
-                          <a class='menu-trigger'>
-                              <span>Menu</span>
-                          </a>
-                          <!-- ***** Menu End ***** -->
-                      </nav>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </header>
 
-    <!-- Inicio formulario login -->
-    <div class="container py-3">
-      <div class="card my-5">
-        <div class="card-body">
-          <div class="row m-3">
-            <div class="col-md-6 bg-login-imagen"></div>
-            <div class="col-md-6">
-              <h1
-                style="color: black"
-                class="h4 text-gray-900 my-3 text-center"
-              >
-                Bienvenido
-              </h1>
-              <form id="form-login">
-                <div id="form-group">
-                  <div class="mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="user"
-                      placeholder="correo electrónico"
-                      required
-                    />
+
+<!--TemplateMo 579 Cyborg Gaming
+https://templatemo.com/tm-579-cyborg-gaming-->
+
+ 
+
+  <body>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{{url_for('homepage')}}" class="logo">
+                        <img src="static/assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Buscar" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="{{url_for('homepage')}}">Inicio</a></li>
+                        <li><a href="{{url_for('browse')}}">Sitios</a></li>
+                        <li><a href="{{url_for('details')}}">Hoteles</a></li>
+                        <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                        <li><a href="{{url_for('resena')}}">Reseñas</a></li>
+                        <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
+                        <li><a href="{{url_for('entrar')}}">Iniciar sesión <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Formulario Reseñas Start ***** -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+          <div class="game-details">
+            <div class="row">
+              <div class="col-lg-12">
+                 <div class="content">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="container py-3">
+                        <div class="card-body">
+                          <div class="row m-3">
+                            <div class="col-md-6 bg-login-imagen"></div>
+                              <div class="col-md-6"> 
+                                <h1 style="color: #ed217c" class="h4 text-gray-900 my-3 text-center">Bienvenido</h1>
+                                <form id="form-login">
+                                  <div id="form-group">
+                                    <div class="mb-3">
+                                      <input
+                                      type="text"
+                                      class="form-control"
+                                      id="user"
+                                      placeholder="Correo electrónico"
+                                      required/>
+                                    </div>
+                                  </div>
+                                  <div id="form-group">
+                                    <div class="mb-3">
+                                      <input
+                                        type="password"
+                                        class="form-control"
+                                        id="password"
+                                        placeholder="Contraseña"
+                                        required/>
+                                    </div>
+                                  </div>
+                                  <button
+                                  type="submit"
+                                  class="btn btn-primary btn-block"
+                                  id="BTNENTRAR"
+                                  onclick="login()">
+                                  Entrar
+                                  </button>
+                                  <br>
+                                </form>
+                              </div>
+                            </div>
+                            <a href="{{url_for('register')}}"
+                            ><h5 style="color: #ed217c">Aun no tienes cuenta?, regístrate aquí</h5></a>
+                            <div id="login-error" class="alert alert-danger d-none" role="alert">
+                            Usuario o contraseña incorrectos
+                            </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div id="form-group">
-                  <div class="mb-3">
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      placeholder="contraseña"
-                      required
-                    />
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-block"
-                  id="BTNENTRAR"
-                  onclick="login()"
-                >
-                  Entrar
-                </button>
-                <br/>
-              </form>
+              </div>
             </div>
           </div>
-          <a href="register.html" style="color: black"
-            >Aun no tienes cuenta?, regístrate aquí</a
-          >
-          <div id="login-error" class="alert alert-danger d-none" role="alert">
-            Usuario o contraseña incorrectos
-          </div>
         </div>
-      </div>
+      </div> 
     </div>
+  </div>
   </body>
 </html>

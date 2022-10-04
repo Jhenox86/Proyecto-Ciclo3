@@ -68,7 +68,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                     placeholder="Buscar"
                     id="searchText"
                     name="searchKeyword"
-                    onkeypress="handle"
+                    onkeypress= "handle"
                   />
                   <i class="fa fa-search"></i>
                 </form>
@@ -77,13 +77,12 @@ https://templatemo.com/tm-579-cyborg-gaming
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
-                <li><a href="{{url_for('browse')}}">Sitios turísticos</a></li>
+                <li><a href="{{url_for('browse')}}">Sitios</a></li>
                 <li><a href="{{url_for('details')}}">Hoteles</a></li>
                 <li><a href="{{url_for('nosotros')}}"class="active">Nosotros</a></li>
-                <li><a href="{{url_for('resena')}}">Reseña</a></li>
-                <li><a href="{{url_for('entrar')}}">Login</a></li>
-                <li><a href="{{url_for('register')}}">Registrarse</a></li>
-                <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                <li><a href="{{url_for('resena')}}">Reseñas</a></li>
+                <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
+                <li><a href="{{url_for('entrar')}}">Iniciar sesión <img src="static/assets/images/profile-header.png" alt=""></a></li>
             </ul>  
               <a class="menu-trigger">
                 <span>Menu</span>
