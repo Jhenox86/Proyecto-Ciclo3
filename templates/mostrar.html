@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     {% block content %}
-    <title>Document</title>
+    <title>J-TRAVEL</title>
 </head>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,9 +67,9 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="{{url_for('homepage')}}" class="logo">
-                        <img src="static/assets/images/logo.png" alt="">
-                    </a>
+                    <a href="{{url_for('homepage')}}" class="space_logo">
+                      <img src="static/assets/images/logo1.png" alt="img_no_encontrada" height="70px" hspace ="15">
+                  </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
                     <div class="search-input">
@@ -77,14 +81,13 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="{{url_for('homepage')}}" class="active">Inicio</a></li>
+                        <li><a href="{{url_for('homepage')}}">Inicio</a></li>
                         <li><a href="{{url_for('browse')}}">Sitios</a></li>
                         <li><a href="{{url_for('details')}}">Hoteles</a></li>
                         <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
-                        <li><a href="{{url_for('resena')}}">Reseñas</a></li>
-                        <li><a href="{{url_for('entrar')}}">Login</a></li>
+                        <li><a href="{{url_for('resena')}}" class="active">Reseñas</a></li>
                         <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
-                        <li><a href="{{url_for('profile')}}">Perfil <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                        <li><a href="{{url_for('entrar')}}">Iniciar sesión <img src="static/assets/images/profile-header.png" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -97,14 +100,9 @@ https://templatemo.com/tm-579-cyborg-gaming
   </header>
   <!-- ***** Header Area End ***** -->
 <body> 
-    
-
-
-
-
     <div class="main-banner">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-12">
         <div class="header-text">
           
           <br>
@@ -120,7 +118,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{url_for('create')}}">Nueva Reseña<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{url_for('resena')}}">Nueva Reseña<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="{{url_for('home')}}">Mostrar Reseña<span class="sr-only">(current)</span></a>
@@ -129,7 +127,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             </div>
         </nav>
 
-    <table class="table table-light">
+    <table class="table table-light" style="border-radius: 10px;">
         <thead class="thead-light">
             <tr>
                 <th>#</th>
@@ -144,7 +142,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             {% for empleados in empleados %}
             <tr>
                 <td>{{empleados[0]}}</td>
-                <td><img class="img-thumbnail" width="100" src="uploads/{{empleados[3]}}" alt=""></td>
+                <td width="220"><img class="img-thumbnail" width="70" src="uploads/{{empleados[3]}}" alt=""></td>
                 <td>{{empleados[1]}}</td>
                 <td>{{empleados[2]}}</td>
                 <td><a href="/edit/{{empleados[0]}}">Editar</a> | 

@@ -51,8 +51,9 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="{{url_for('homepage')}}" class="logo">
-                        <img src="static/assets/images/logo.png" alt="">
+                    <a href="{{url_for('homepage')}}" class="space_logo">
+                      <img src="static/assets/images/logo1.png" alt="img_no_encontrada" height="70px" hspace ="15">
+                  </a>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
@@ -65,14 +66,14 @@ https://templatemo.com/tm-579-cyborg-gaming
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="{{url_for('homepage')}}">Inicio</a></li>
-                        <li><a href="{{url_for('browse')}}">Sitios</a></li>
-                        <li><a href="{{url_for('details')}}">Hoteles</a></li>
-                        <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
-                        <li><a href="{{url_for('resena')}}" class="active">Reseñas</a></li>
-                        <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
-                        <li><a href="{{url_for('entrar')}}">Iniciar sesión <img src="static/assets/images/profile-header.png" alt=""></a></li>
-                    </ul>   
+                      <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
+                      <li><a href="{{url_for('browse')}}"class="active">Sitios</a></li>
+                      <li><a href="{{url_for('details')}}">Hoteles</a></li>
+                      <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                      <li><a href="{{url_for('resena')}}">Reseñas</a></li>
+                      <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
+                      <li><a href="{{url_for('entrar')}}">Iniciar sesión<img src="static/assets/images/profile-header.png" alt=""></a></li>
+                  </ul> 
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -110,7 +111,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                                 Selecciona una imagen
                                 <input type="file" name="txtFoto" id="txtFoto"placeholder="ingrese su evidencia" class="form-control">
                                 <br>
-                                <input type="submit" name="enviar" id="enviar" value="Enviar Mensaje" class="boton" onclick="" />
+                                <input type="submit" name="enviar" id="enviar" value="Enviar Mensaje" class="btn btn-primary" onclick="" />
                                 </form>
                               </div>
                               <div>

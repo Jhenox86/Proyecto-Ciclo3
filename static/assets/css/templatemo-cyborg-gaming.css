@@ -333,7 +333,9 @@ Pre-loader Style
 Header Style
 --------------------------------------------- 
 */
-
+.space_logo{
+  margin-right: 20px;
+}
 .background-header {
   background-color: #fff !important;
   height: 70px!important;
@@ -697,6 +699,7 @@ Header Style
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+
   .header-area.header-sticky .nav {
     margin-top: 65px !important;
     text-align: center;

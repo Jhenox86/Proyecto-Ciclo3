@@ -1,27 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>J-TRAVEL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
 
+TemplateMo 579 Cyborg Gaming
 
-{% for empleado in empleados %}
- 
-        <form method="post" action="/update" enctype="multipart/form-data">
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <!-- <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div> -->
+  <!-- ***** Preloader End ***** -->
     
-        <input type="text" value="{{ empleado[0] }}" name="txtID" id="txtID">
-        <br>
-        Nombre:
-        <input type="text" name="txtNombre" value="{{ empleado[1] }}"id="txtNombre" placeholder="ingrese su nombre completo" class="compo1">
-        <br>
-        correo:
-        <input type="email" name="txtCorreo"value="{{ empleado[2] }}" id="txtCorreo"placeholder="ingrese su correo" class="compo1">
-        <br>
-        Foto:
-        <br/>
-        <img class="img-thumbnail" width='500'src="{{ url_for('uploads',nombreFoto=empleado[3] ) }}" >
-        <br/>
-        <input type="file" name="txtFoto" id="txtFoto"placeholder="ingrese su evidencia" class="compo1">
-        <br>
-        <br>
-        <input type="submit" name="enviar" id="enviar" value="Agregar" class="boton" onclick="" />
-        </form>
 
-{% endfor %}
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{{url_for('homepage')}}" class="space_logo">
+                      <img src="static/assets/images/logo1.png" alt="img_no_encontrada" height="70px" hspace ="15">
+                  </a>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Buscar" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
+                      <li><a href="{{url_for('browse')}}"class="active">Sitios</a></li>
+                      <li><a href="{{url_for('details')}}">Hoteles</a></li>
+                      <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                      <li><a href="{{url_for('resena')}}">Reseñas</a></li>
+                      <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
+                      <li><a href="{{url_for('entrar')}}">Iniciar sesión<img src="static/assets/images/profile-header.png" alt=""></a></li>
+                  </ul> 
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Formulario Reseñas Start ***** -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+          <div class="game-details">
+            <div class="row">
+              <div class="col-lg-12">
+                 <div class="content">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="container py-3">
+                        <div class="card-body">
+                          <div class="row m-3">
+                            <div class="col-md-6 bg-login-imagen"></div>
+                              <div class="col-md-6"> 
+                                {% for empleado in empleados %}
+ 
+                                <form method="post" action="/update" enctype="multipart/form-data">
+                        
+                                <input type="text" value="{{ empleado[0] }}" name="txtID" id="txtID">
+                                <br>
+                                Nombre:
+                                <input type="text" name="txtNombre" value="{{ empleado[1] }}"id="txtNombre" placeholder="ingrese su nombre completo" class="compo1">
+                                <br>
+                                correo:
+                                <input type="email" name="txtCorreo"value="{{ empleado[2] }}" id="txtCorreo"placeholder="ingrese su correo" class="compo1">
+                                <br>
+                                Foto:
+                                <br/>
+                                <img class="img-thumbnail" width='500'src="{{ url_for('uploads',nombreFoto=empleado[3] ) }}" >
+                                <br/>
+                                <input type="file" name="txtFoto" id="txtFoto"placeholder="ingrese su evidencia" class="compo1">
+                                <br>
+                                <br>
+                                <input type="submit" name="enviar" id="enviar" value="Agregar" class="boton" onclick="" />
+                                </form>
+
+                                {% endfor %}
+                          </div>
+                         </div>  
+                       </div>
+                     </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Formulario Reseñas End ***** -->
+  
+  </body>
+    
+
+</html>
+
+
+
+
